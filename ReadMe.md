@@ -73,7 +73,7 @@ int main()
 If *ip points to the integer x, then *ip can occur in any context where x could, so  
 ```c
 *ip = *ip + 10
-Y = *ip + 1
+y = *ip + 1
 *ip += 1
 ++*ip
 (*ip)++		// () are necessary; otherwise it will increment ip instead of what it points to
