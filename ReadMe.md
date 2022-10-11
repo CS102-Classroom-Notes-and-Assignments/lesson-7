@@ -64,7 +64,7 @@ int main()
 }
 ```
 
-#### Pointers with function names
+#### Pointers as function argument
 ```double *dp, atof(char *).```
 - *dp and atof(s) have values of double
 - Argument of atof is a pointer to char
