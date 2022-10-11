@@ -199,7 +199,7 @@ int main()
     printf("after:  x=%d, y=%d\n", x, y);
 }
 ```
-<img src="pointerswap.png" width="400">
+<img src="pointerswap.png" width="200">
 
 GETINT
 ```c
