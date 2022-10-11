@@ -266,7 +266,7 @@ int main()
 }
 ```
 
-Pointers and Arrays
+## Pointers and Arrays
 Any operation that can be achieved by array subscripting can also be done with pointers. The pointer version will in general be faster but, at least to the uninitiated, somewhat harder to understand.
 ```c
 int a[10];
@@ -284,11 +284,14 @@ These remarks are true regardless of the type or size of the variables in the ar
 
 Thus after the assignment 
 ```pa =&a[0];```
-pa and a have identical values. Since the name of an array is a synonym for the location of the initial element, the assignment pa=&a[0] can also be written as 
+pa and a have identical values. Since the **name of an array is a synonym for the location of the initial element**, the assignment ```pa=&a[0]``` can also be written as 
 ```pa=a;```
-Similarly a[i] is the same as *(a+1). The two forms are equivalent in C. 
-Therefore  applying the & operator to both sides, shows that &a[i] and (a + i) are identical.
-There is one difference between an array name and a pointer that must be kept in mind. A pointer is a variable, so pa=a and pa++ are legal. But an array name is not a variable; constructions like a=pa and a++ are illegal.
+
+Similarly ```a[i]``` is the same as ```*(a+i)```. The two forms are equivalent in C. 
+
+Therefore  applying the & operator to both sides, shows that ```&a[i]``` and ```(a + i)``` are identical.
+
+There is one difference between an array name and a pointer that must be kept in mind. A pointer is a variable, so ```pa=a``` and ```pa++``` are legal. But an array name is not a variable; constructions like ```a=pa``` and ```a++``` are illegal.
 
 When an array name is passed to a function, what is passed is the location of the initial element. Within the called function, this argument is a local variable, and so an array name parameter is a pointer, that is, a variable containing address. Using this fact we can write the strlen function as below:
 
@@ -317,15 +320,15 @@ int main()
 }
 ```
 
-Since s is a pointer, incrementing it is perfectly legal; s++ has no effect on the character string in the function that is called strlen, but merely increments strlen’s private copy of the pointer. 
+Since ```s``` is a pointer, incrementing it is perfectly legal; ```s++``` has no effect on the character string in the function that is called strlen, but merely increments strlen’s private copy of the pointer. 
 
-As formal parameters in a function definition, char s[]; and char *s; are equivalent.
+As formal parameters in a function definition, ```char s[];``` and ```char *s;``` are equivalent.
 
 It is possible to pass part of an array to a function, by passing a pointer to the beginning of the subarray. For example, if a is an array, 
-f(&a[2])
+```f(&a[2])```
 And 
-f(a+2)
-both pass to the function f, the address of the subarray that starts at a[2]. In fact, if you are sure that the elements exist, it is also possible to index backwards in an array; p[-1], p[-2], … .
+```f(a+2)```
+both pass to the function f, the address of the subarray that starts at ```a[2]```. In fact, if you are sure that the elements exist, it is also possible to index backwards in an array; ```p[-1], p[-2], … ```.
 
 ### ADDRESS ARITHMETIC
 
