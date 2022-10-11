@@ -1,5 +1,7 @@
 # lesson-7
 
+<img src="pointers.png" width="400">
+
 ### Pointers and Arrays
 - A pointer is a variable that contains the address of a variable. 
 - Pointers allow us to create more compact and efficient code
@@ -7,12 +9,10 @@
 - ```void *``` (pointer to void) is the proper type for a generic pointer
 
 Machine has an array of consecutively numbered or addressed memory cells that may be manipulated individually or in contiguous groups. 
-char - Any byte
-short integer - a pair of one-byte cells
-Long - four adjacent bytes 
-A pointer is a group of cells (often two or four) that can hold an address.
-
-<img src="pointers.png" width="400">
+- char - Any byte
+- short integer - a pair of one-byte cells
+- Long - four adjacent bytes 
+- A pointer is a group of cells (often two or four) that can hold an address.
 
 #### Unary operators:
 - & 
