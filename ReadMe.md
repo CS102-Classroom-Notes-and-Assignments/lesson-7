@@ -355,5 +355,5 @@ int main()
 
 # Homework:
 - The C Programming Language, 2nd Edition - Kerninghan & Ritchie, Chapter 5.1-5.9. This includes some reading ahead which will be really helpful for the next lesson.
-- Hw link:
+- Hw link: https://classroom.github.com/a/oADhFQVU
 
