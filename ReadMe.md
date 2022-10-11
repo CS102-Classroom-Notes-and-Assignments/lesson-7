@@ -18,7 +18,7 @@ A pointer is a group of cells (often two or four) that can hold an address.
 - & 
   - gives the address of an object, so the statement ```p=&c;``` Assigns the address of c to the variable p, and is said to “point to” c.
   - The & operator only applies to objects in memory: variables and array elements. It cannot be applied to expressions, constants or register variables.
-- *
+- \*
   - The indirection or dereferencing operator; when applied to a pointer, it accesses the object the pointer points to.
 
 
