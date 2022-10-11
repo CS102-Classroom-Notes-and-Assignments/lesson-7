@@ -201,7 +201,7 @@ int main()
 ```
 <img src="pointerswap.png" width="200">
 
-GETINT
+#### GETINT
 ```c
 #include <stdio.h>
 #include <ctype.h>
@@ -293,7 +293,7 @@ There is one difference between an array name and a pointer that must be kept in
 When an array name is passed to a function, what is passed is the location of the initial element. Within the called function, this argument is a local variable, and so an array name parameter is a pointer, that is, a variable containing address. Using this fact we can write the strlen function as below:
 
 
-STRLEN
+#### STRLEN
 ```c
 #include <stdio.h>
 
@@ -327,7 +327,7 @@ And
 f(a+2)
 both pass to the function f, the address of the subarray that starts at a[2]. In fact, if you are sure that the elements exist, it is also possible to index backwards in an array; p[-1], p[-2], … .
 
-#### ADDRESS ARITHMETIC
+### ADDRESS ARITHMETIC
 
 #### ANOTHER STRLEN
 ```c
@@ -354,6 +354,6 @@ int main()
 ```
 
 # Homework:
-The C Programming Language, 2nd Edition - Kerninghan & Ritchie
-Chapter 5.1-5.9
+- The C Programming Language, 2nd Edition - Kerninghan & Ritchie, Chapter 5.1-5.9. This includes some reading ahead which will be really helpful for the next lesson.
+- Hw link:
 
